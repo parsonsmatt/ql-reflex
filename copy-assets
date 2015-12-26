@@ -1,0 +1,13 @@
+#! /bin/sh
+
+PREFIX=`stack path --dist-dir`
+PREFIX="$PREFIX/build/ui-output/ui-output.jsexe"
+echo "Copying RTS..."
+cp "$PREFIX/rts.js" assets/rts.js
+echo "Copying lib..."
+cp "$PREFIX/lib.js" assets/lib.js
+echo "Copying out..."
+cp "$PREFIX/out.js" assets/out.js
+echo "Copying runmain..."
+cp "$PREFIX/runmain.js" assets/runmain.js
+echo "All copied!"
