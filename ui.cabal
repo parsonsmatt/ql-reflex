@@ -20,7 +20,10 @@ library
   build-depends:       base >= 4.7 && < 5
                      , ghcjs-base
                      , ghcjs-dom
+                     , safe
                      , reflex-dom
+                     , reflex
+                     , containers
   default-language:    Haskell2010
 
 executable ui-output
